@@ -23,12 +23,20 @@ const translations = {
   ]
 };
 const selectors = ['nav a[href="#abordagem"]','nav a[href="#areas"]','nav a[href="#mindfulness"]','nav a[href="#percurso"]','nav a[href="#consulta"]','.hero-copy .eyebrow','.hero h1','.hero-text','.hero .button','#abordagem .eyebrow','.intro h2','.intro-grid div p:nth-child(1)','.intro-grid div p:nth-child(2)','.section-heading .eyebrow','.section-heading h2',...Array.from({length:4},(_,i)=>[`.cards article:nth-child(${i+1}) h3`,`.cards article:nth-child(${i+1}) p`]).flat(),'.mindfulness-art span','.mindfulness-copy .eyebrow','.mindfulness-copy h2','.mindfulness-copy p:nth-of-type(2)','.mindfulness-copy p:nth-of-type(3)','.mindfulness-copy a','.quote-section blockquote','.credentials .eyebrow','.credentials-lead','.credentials li:nth-child(1) strong','.credentials li:nth-child(1) span','.credentials li:nth-child(2) strong','.credentials li:nth-child(2) span','.credentials li:nth-child(3) strong','.credentials li:nth-child(3) span','.credentials li:nth-child(4) span','.journey-transition','.journey-training p:nth-child(2)','.appointment .eyebrow','.appointment h2','.appointment > div:first-child > p:last-child','.meditations .eyebrow','.meditations h2','.meditations > div:nth-child(2) > p:first-child','.meditations .coming'];
+selectors[selectors.indexOf('.appointment > div:first-child > p:last-child')] = '.appointment-description';
 const nodes = selectors.map(selector => document.querySelector(selector));
-const original = nodes.map(node => node.innerHTML);
+const original = nodes.map(node => node ? node.innerHTML : '');
+const additionalNodes = [document.querySelector('.doctor-intro p'), document.querySelector('.appointment-languages')];
+const additionalOriginal = additionalNodes.map(node => node.innerHTML);
+const additionalTranslations = {en:['A gastroenterology specialist with 25 years of clinical experience.','Consultations in Portuguese, English and French.'],fr:['Médecin spécialiste en gastroentérologie, avec 25 ans d’expérience clinique.','Consultations en portugais, anglais et français.']};
+translations.en[selectors.indexOf('.mindfulness-copy p:nth-of-type(3)')] = 'Dr Rita combines her medical experience with training in <strong>mindfulness meditation teaching</strong> (Dharma Moon) and <strong>compassion cultivation</strong> (Compassion Institute), with an approach attentive to each person’s journey.';
+translations.fr[selectors.indexOf('.mindfulness-copy p:nth-of-type(3)')] = 'La Dre Rita associe son expérience médicale à des formations en <strong>enseignement de la méditation de pleine conscience</strong> (Dharma Moon) et en <strong>culture de la compassion</strong> (Compassion Institute), dans une approche attentive au parcours de chacun.';
 const picker = document.querySelector('#language');
 function setLanguage(language) {
   const text = language === 'pt' ? original : translations[language];
-  nodes.forEach((node, index) => { node.innerHTML = text[index]; });
+  nodes.forEach((node, index) => { if (node) node.innerHTML = text[index]; });
+  const extra = language === 'pt' ? additionalOriginal : additionalTranslations[language];
+  additionalNodes.forEach((node, index) => { node.innerHTML = extra[index]; });
   document.documentElement.lang = { pt: 'pt-PT', en: 'en', fr: 'fr' }[language];
   document.querySelector('nav').setAttribute('aria-label', {pt:'Navegação principal',en:'Main navigation',fr:'Navigation principale'}[language]);
   document.querySelector('.menu-toggle').setAttribute('aria-label', {pt:'Abrir menu',en:'Open menu',fr:'Ouvrir le menu'}[language]);
