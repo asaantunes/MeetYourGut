@@ -8,3 +8,4 @@
 .site-header nav{margin-left:auto}.language-picker{margin:0 0 0 20px}.language-picker select{border:0;padding:6px 2px;font-size:11px;color:#5b6c4f}.language-picker select:focus-visible{outline:2px solid var(--ink);outline-offset:3px}@media(max-width:760px){.site-header .menu-toggle{margin-left:auto}.language-picker{margin:0 0 0 18px}}
 .doctor-intro{margin-top:0}
 .brand-logo img{width:112px;height:auto}.site-header{padding-top:12px;padding-bottom:12px}@media(max-width:760px){.brand-logo img{width:90px}}
+.practice-options .spotify-link{color:inherit;display:inline-block;font-size:12px;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}.practice-options .spotify-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}

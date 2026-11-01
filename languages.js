@@ -29,12 +29,14 @@ translations.en[2] = 'Mindfulness practices';
 translations.fr[2] = 'Pratiques de pleine conscience';
 const nodes = selectors.map(selector => document.querySelector(selector));
 const original = nodes.map(node => node ? node.innerHTML : '');
-const additionalNodes = [document.querySelector('.doctor-intro p'), document.querySelector('.appointment-languages'), ...document.querySelectorAll('.practice-options h3, .practice-options p, .practice-options span')];
+const additionalNodes = [document.querySelector('.doctor-intro p'), document.querySelector('.appointment-languages'), ...document.querySelectorAll('.practice-options h3, .practice-options p, .practice-options span, .practice-options a')];
 const additionalOriginal = additionalNodes.map(node => node.innerHTML);
 const additionalTranslations = {en:['A gastroenterology specialist with 25 years of clinical experience.','Consultations in Portuguese, English and French.','Spotify content','Guided meditations and reflections to listen to wherever you are.','Coming soon','Online courses','Practices and learning to explore at your own pace.','Coming soon','Group courses','See the calendar of upcoming gatherings.','Coming soon','Individual sessions','A space for personal guidance in your practice.','Coming soon'],fr:['Médecin spécialiste en gastroentérologie, avec 25 ans d’expérience clinique.','Consultations en portugais, anglais et français.','Contenus Spotify','Méditations guidées et réflexions à écouter où que vous soyez.','Bientôt','Formations en ligne','Des pratiques et apprentissages à découvrir à votre rythme.','Bientôt','Formations en groupe','Consultez le calendrier des prochaines rencontres.','Bientôt','Séances individuelles','Un espace d’accompagnement personnel pour votre pratique.','Bientôt']};
 translations.en[selectors.indexOf('.mindfulness-copy p:nth-of-type(3)')] = 'Dr Rita combines her medical experience with training in <strong>mindfulness meditation teaching</strong> (Dharma Moon) and <strong>compassion cultivation</strong> (Compassion Institute), with an approach attentive to each person’s journey.';
 translations.fr[selectors.indexOf('.mindfulness-copy p:nth-of-type(3)')] = 'La Dre Rita associe son expérience médicale à des formations en <strong>enseignement de la méditation de pleine conscience</strong> (Dharma Moon) et en <strong>culture de la compassion</strong> (Compassion Institute), dans une approche attentive au parcours de chacun.';
 const picker = document.querySelector('#language');
+additionalTranslations.en[4] = 'Listen on Spotify ↗';
+additionalTranslations.fr[4] = 'Écouter sur Spotify ↗';
 function setLanguage(language) {
   const text = language === 'pt' ? original : translations[language];
   nodes.forEach((node, index) => { if (node) node.innerHTML = text[index]; });
