@@ -9,3 +9,4 @@
 .doctor-intro{margin-top:0}
 .brand-logo img{width:112px;height:auto}.site-header{padding-top:12px;padding-bottom:12px}@media(max-width:760px){.brand-logo img{width:90px}}
 .practice-options .spotify-link{color:inherit;display:inline-block;font-size:12px;font-weight:600;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}.practice-options .spotify-link:focus-visible{outline:2px solid currentColor;outline-offset:4px}
+.purpose{background:#f2ede5;display:grid;grid-template-columns:1fr 1fr;gap:12%}.purpose h2{font-size:clamp(36px,4vw,58px)}.purpose-intro{font-size:17px;line-height:1.7;max-width:520px;margin-top:30px}.purpose-paths article{border-top:1px solid var(--line);padding:24px 0}.purpose-paths span{font-size:11px;color:#7b6347}.purpose-paths h3{font:27px/1.2 Fraunces,serif;margin:14px 0 10px}.purpose-paths p{margin:0;line-height:1.7}@media(max-width:760px){.purpose{grid-template-columns:1fr;gap:35px}}
