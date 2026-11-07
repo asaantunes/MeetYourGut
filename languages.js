@@ -60,6 +60,7 @@ function setLanguage(language) {
   const newsletterText = language === 'pt' ? newsletterOriginal : newsletterTranslations[language];
   newsletterNodes.forEach((node, index) => { node.innerHTML = newsletterText[index]; });
   document.documentElement.lang = { pt: 'pt-PT', en: 'en', fr: 'fr' }[language];
+  document.querySelector('.brand-byline').textContent = {pt:'por Rita Ornelas',en:'by Rita Ornelas',fr:'par Rita Ornelas'}[language];
   document.querySelector('nav').setAttribute('aria-label', {pt:'Navegação principal',en:'Main navigation',fr:'Navigation principale'}[language]);
   document.querySelector('.menu-toggle').setAttribute('aria-label', {pt:'Abrir menu',en:'Open menu',fr:'Ouvrir le menu'}[language]);
   try { localStorage.setItem('meet-your-gut-language', language); } catch (_) {}
