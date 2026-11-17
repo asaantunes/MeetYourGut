@@ -78,6 +78,7 @@ const pageMetadata = {
   }
 };
 function setLanguage(language) {
+  document.querySelector('.hero-signature span').textContent = {pt:'Médica Gastroenterologista · Algarve e Alentejo',en:'Gastroenterologist · Algarve and Alentejo',fr:'Médecin gastro-entérologue · Algarve et Alentejo'}[language];
   const metadata = pageMetadata[language];
   document.title = metadata.title;
   document.querySelector('meta[name="description"]').content = metadata.description;
