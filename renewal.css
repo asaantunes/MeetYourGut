@@ -21,3 +21,5 @@ em,i{font-style:normal}.menu-icon{display:block;width:25px;height:25px}.ui-icon{
 @media(max-width:760px){.site-header{position:relative}.menu-open nav{top:100%}}
 .site-header .brand-logo img{mix-blend-mode:darken}
 .brand-logo{display:block;line-height:0}.brand-logo img{display:block}
+
+.purpose-paths .purpose-subtitle{margin-bottom:12px}
