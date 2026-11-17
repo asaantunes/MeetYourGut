@@ -60,7 +60,30 @@ additionalTranslations.en[4] = 'Listen on Spotify ↗';
 additionalTranslations.fr[4] = 'Écouter sur Spotify ↗';
 additionalTranslations.en.splice(11, 3, 'Newsletter', 'Articles on the gut–brain axis, the microbiome and self-understanding.', 'Subscribe to the newsletter ↗');
 additionalTranslations.fr.splice(11, 3, 'Newsletter', 'Articles sur l’axe intestin–cerveau, le microbiome et la connaissance de soi.', 'S’abonner à la newsletter ↗');
+const pageMetadata = {
+  "pt": {
+    "title": "Rita Ornelas | Gastrenterologista | Meet Your Gut",
+    "description": "Conheça Rita Ornelas, médica gastrenterologista no Algarve. Saúde digestiva, eixo intestino-cérebro e o projeto Meet Your Gut. Locais de consulta e recursos.",
+    "locale": "pt_PT"
+  },
+  "en": {
+    "title": "Rita Ornelas | Gastroenterologist | Meet Your Gut",
+    "description": "Meet Rita Ornelas, a gastroenterologist in the Algarve. Digestive health, the gut–brain axis and Meet Your Gut. Consultation locations and resources.",
+    "locale": "en_GB"
+  },
+  "fr": {
+    "title": "Rita Ornelas | Gastro-entérologue | Meet Your Gut",
+    "description": "Découvrez Rita Ornelas, gastro-entérologue en Algarve. Santé digestive, axe intestin–cerveau et Meet Your Gut. Lieux de consultation et ressources.",
+    "locale": "fr_FR"
+  }
+};
 function setLanguage(language) {
+  const metadata = pageMetadata[language];
+  document.title = metadata.title;
+  document.querySelector('meta[name="description"]').content = metadata.description;
+  document.querySelector('meta[property="og:title"]').content = metadata.title;
+  document.querySelector('meta[property="og:description"]').content = metadata.description;
+  document.querySelector('meta[property="og:locale"]').content = metadata.locale;
   const text = language === 'pt' ? original : translations[language];
   nodes.forEach((node, index) => { if (node) node.innerHTML = text[index]; });
   const extra = language === 'pt' ? additionalOriginal : additionalTranslations[language];
