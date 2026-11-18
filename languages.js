@@ -81,6 +81,7 @@ const appointmentServices = {
   "pt": [
     "Consultas · Exames endoscópicos",
     "Consultas",
+    "Exames endoscópicos",
     "Consultas · Exames endoscópicos",
     "Consulta presencial ou online",
     "Consultas · Exames endoscópicos",
@@ -89,6 +90,7 @@ const appointmentServices = {
   "en": [
     "Consultations · Endoscopic examinations",
     "Consultations",
+    "Endoscopic examinations",
     "Consultations · Endoscopic examinations",
     "In-person or online consultation",
     "Consultations · Endoscopic examinations",
@@ -97,6 +99,7 @@ const appointmentServices = {
   "fr": [
     "Consultations · Examens endoscopiques",
     "Consultations",
+    "Examens endoscopiques",
     "Consultations · Examens endoscopiques",
     "Consultation en présentiel ou en ligne",
     "Consultations · Examens endoscopiques",
