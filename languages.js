@@ -8,7 +8,7 @@ const translations = {
     'a moment<br /><i>for you</i>','MINDFULNESS &amp; COMPASSION','Returning<br /><em>to the present moment.</em>','Mindfulness is the practice of paying attention to the present moment with curiosity and without judgment. It can help us recognise sensations, emotions and patterns, cultivating a more aware and compassionate relationship with our experience.','Dr Rita Ornelas combines her medical experience with training in mindfulness meditation, compassion and self-compassion. Her approach invites practice and attentive guidance, respecting each person’s journey.','Explore guided practices ↓',
     'Medicine that brings together science, clinical listening and a genuine understanding of each story.','BACKGROUND','A specialist in gastroenterology with a particular interest in neurogastroenterology, gut–brain interaction disorders and hepatology.','+25 years','of clinical experience','Endoscopy','diagnostic and therapeutic','Consultant','in gastroenterology since 2020','consultations in three languages',
     'Because caring deeply goes beyond relieving symptoms.','Dr Rita’s training includes <strong>mindfulness meditation teaching</strong> (Dharma Moon) and <strong>compassion cultivation</strong> (Compassion Institute), bringing presence and attention to the person into her care.',
-    'CONSULTATIONS AND ENDOSCOPIC EXAMINATIONS','Let’s care for<br /><em>your digestive health.</em>','To book, select the most convenient location.','A MOMENT FOR YOU','Practise,<br /><em>at your own pace.</em>','A space to discover guided meditations and content on mindfulness and wellbeing, bringing practice into your everyday life.','SPOTIFY CONTENT · COMING SOON'
+    'CONSULTATIONS AND ENDOSCOPIC EXAMINATIONS','Let’s care for<br /><em>your digestive health.</em>','To book a consultation or an examination, choose the most convenient town and healthcare facility.','A MOMENT FOR YOU','Practise,<br /><em>at your own pace.</em>','A space to discover guided meditations and content on mindfulness and wellbeing, bringing practice into your everyday life.','SPOTIFY CONTENT · COMING SOON'
   ],
   fr: [
     'Approche','Domaines cliniques','Pleine conscience','Parcours','Prendre rendez-vous',
@@ -19,7 +19,7 @@ const translations = {
     'un moment<br /><i>pour soi</i>','PLEINE CONSCIENCE &amp; COMPASSION','Revenir<br /><em>au moment présent.</em>','La pleine conscience est une pratique d’attention au moment présent, avec curiosité et sans jugement. Elle peut nous aider à reconnaître sensations, émotions et habitudes, pour cultiver une relation plus consciente et bienveillante avec notre expérience.','La Dre Rita Ornelas associe son expérience médicale à des formations en méditation de pleine conscience, compassion et autocompassion. Son approche invite à la pratique et à un accompagnement attentif, dans le respect du cheminement de chacun.','Découvrir les pratiques guidées ↓',
     'Une médecine qui associe science, écoute clinique et compréhension sincère de chaque histoire.','PARCOURS','Médecin spécialiste en gastroentérologie, particulièrement intéressée par la neurogastroentérologie, les troubles de l’axe intestin–cerveau et l’hépatologie.','+25 ans','d’expérience clinique','Endoscopie','diagnostique et thérapeutique','Consultante','en gastroentérologie depuis 2020','consultations en trois langues',
     'Parce que prendre soin en profondeur va au-delà du soulagement des symptômes.','Le parcours de la Dre Rita comprend des formations en <strong>enseignement de la méditation de pleine conscience</strong> (Dharma Moon) et en <strong>culture de la compassion</strong> (Compassion Institute), intégrant présence et attention à la personne dans ses soins.',
-    'CONSULTATIONS ET EXAMENS ENDOSCOPIQUES','Prenons soin<br /><em>de votre santé digestive.</em>','Pour prendre rendez-vous, choisissez l’établissement qui vous convient.','UN MOMENT POUR VOUS','Pratiquer,<br /><em>à votre rythme.</em>','Un espace pour découvrir des méditations guidées et des contenus sur la pleine conscience et le bien-être, à intégrer dans votre quotidien.','CONTENUS SPOTIFY · BIENTÔT'
+    'CONSULTATIONS ET EXAMENS ENDOSCOPIQUES','Prenons soin<br /><em>de votre santé digestive.</em>','Pour prendre rendez-vous pour une consultation ou un examen, choisissez la localité et l’établissement qui vous conviennent le mieux.','UN MOMENT POUR VOUS','Pratiquer,<br /><em>à votre rythme.</em>','Un espace pour découvrir des méditations guidées et des contenus sur la pleine conscience et le bien-être, à intégrer dans votre quotidien.','CONTENUS SPOTIFY · BIENTÔT'
   ]
 };
 const selectors = ['nav a[href="#abordagem"]','nav a[href="#areas"]','nav a[href="#mindfulness"]','nav a[href="#percurso"]','nav a[href="#consulta"]','.hero-copy .eyebrow','.hero h1','.hero-text','.hero .button','#abordagem .eyebrow','.intro h2','.intro-grid div p:nth-child(1)','.intro-grid div p:nth-child(2)','.section-heading .eyebrow','.section-heading h2',...Array.from({length:4},(_,i)=>[`.cards article:nth-child(${i+1}) h3`,`.cards article:nth-child(${i+1}) p`]).flat(),'.mindfulness-art span','.mindfulness-copy .eyebrow','.mindfulness-copy h2','.mindfulness-copy p:nth-of-type(2)','.mindfulness-copy p:nth-of-type(3)','.mindfulness-copy a','.quote-section blockquote','.credentials .eyebrow','.credentials-lead','.credentials li:nth-child(1) strong','.credentials li:nth-child(1) span','.credentials li:nth-child(2) strong','.credentials li:nth-child(2) span','.credentials li:nth-child(3) strong','.credentials li:nth-child(3) span','.credentials li:nth-child(4) span','.journey-transition','.journey-training p:nth-child(2)','.appointment .eyebrow','.appointment h2','.appointment > div:first-child > p:last-child','.meditations .eyebrow','.meditations h2','.meditations > div:nth-child(2) > p:first-child','.meditations .coming'];
@@ -77,7 +77,34 @@ const pageMetadata = {
     "locale": "fr_FR"
   }
 };
+const appointmentServices = {
+  "pt": [
+    "Consultas · Exames endoscópicos",
+    "Consultas",
+    "Consultas · Exames endoscópicos",
+    "Consulta presencial ou online",
+    "Consultas · Exames endoscópicos",
+    "Consultas"
+  ],
+  "en": [
+    "Consultations · Endoscopic examinations",
+    "Consultations",
+    "Consultations · Endoscopic examinations",
+    "In-person or online consultation",
+    "Consultations · Endoscopic examinations",
+    "Consultations"
+  ],
+  "fr": [
+    "Consultations · Examens endoscopiques",
+    "Consultations",
+    "Consultations · Examens endoscopiques",
+    "Consultation en présentiel ou en ligne",
+    "Consultations · Examens endoscopiques",
+    "Consultations"
+  ]
+};
 function setLanguage(language) {
+  document.querySelectorAll('.appointment-service').forEach((node, index) => { node.textContent = appointmentServices[language][index]; });
   document.querySelector('.hero-signature span').textContent = {pt:'Médica Gastroenterologista · Algarve e Alentejo',en:'Gastroenterologist · Algarve and Alentejo',fr:'Médecin gastro-entérologue · Algarve et Alentejo'}[language];
   const metadata = pageMetadata[language];
   document.title = metadata.title;

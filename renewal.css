@@ -24,3 +24,16 @@ em,i{font-style:normal}.menu-icon{display:block;width:25px;height:25px}.ui-icon{
 .purpose-paths .purpose-subtitle{margin-bottom:12px}
 
 .hero-signature{font-size:16px;line-height:1.55;margin:0 0 28px}.hero-signature strong{font-weight:600}
+
+.appointment-locality{min-width:0}
+.appointment-locality + .appointment-locality{border-top:1px solid var(--line);margin-top:24px;padding-top:24px}
+.appointment-locality h3{font:600 11px/1.5 Outfit,sans-serif;letter-spacing:1.8px;color:var(--ink);margin:0 0 10px}
+.appointment-locality a{border-bottom:0;padding:14px 0;gap:18px;align-items:center;font-size:18px}
+.appointment-locality a:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
+.appointment-links{min-width:0}
+.appointment-locality a{overflow-wrap:anywhere}
+
+.appointment-unit{display:block;min-width:0}
+.appointment-unit-name{display:block;font-size:18px;line-height:1.45}
+.appointment-locality .appointment-service{display:block;font-size:14px;line-height:1.5;color:#55594f;margin-top:4px}
+.appointment .appointment-links{align-self:start}
