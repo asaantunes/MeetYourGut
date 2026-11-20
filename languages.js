@@ -62,18 +62,18 @@ additionalTranslations.en.splice(11, 3, 'Newsletter', 'Articles on the gut–bra
 additionalTranslations.fr.splice(11, 3, 'Newsletter', 'Articles sur l’axe intestin–cerveau, le microbiome et la connaissance de soi.', 'S’abonner à la newsletter ↗');
 const pageMetadata = {
   "pt": {
-    "title": "Rita Ornelas | Gastrenterologista | Meet Your Gut",
-    "description": "Conheça Rita Ornelas, médica gastrenterologista no Algarve. Saúde digestiva, eixo intestino-cérebro e o projeto Meet Your Gut. Locais de consulta e recursos.",
+    "title": "Rita Ornelas | Gastrenterologista no Algarve | Meet Your Gut",
+    "description": "Rita Ornelas, médica especialista em Gastrenterologia no Algarve e Alentejo. Conheça o Meet Your Gut, os locais de consulta, exames endoscópicos e recursos.",
     "locale": "pt_PT"
   },
   "en": {
-    "title": "Rita Ornelas | Gastroenterologist | Meet Your Gut",
-    "description": "Meet Rita Ornelas, a gastroenterologist in the Algarve. Digestive health, the gut–brain axis and Meet Your Gut. Consultation locations and resources.",
+    "title": "Rita Ornelas | Gastroenterologist in the Algarve | Meet Your Gut",
+    "description": "Rita Ornelas, a gastroenterologist practising in the Algarve and Alentejo. Discover Meet Your Gut, consultation locations, endoscopic examinations and resources.",
     "locale": "en_GB"
   },
   "fr": {
-    "title": "Rita Ornelas | Gastro-entérologue | Meet Your Gut",
-    "description": "Découvrez Rita Ornelas, gastro-entérologue en Algarve. Santé digestive, axe intestin–cerveau et Meet Your Gut. Lieux de consultation et ressources.",
+    "title": "Rita Ornelas | Gastro-entérologue en Algarve | Meet Your Gut",
+    "description": "Rita Ornelas, gastro-entérologue en Algarve et en Alentejo. Découvrez Meet Your Gut, les lieux de consultation, les examens endoscopiques et les ressources.",
     "locale": "fr_FR"
   }
 };
