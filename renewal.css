@@ -37,3 +37,5 @@ em,i{font-style:normal}.menu-icon{display:block;width:25px;height:25px}.ui-icon{
 .appointment-unit-name{display:block;font-size:18px;line-height:1.45}
 .appointment-locality .appointment-service{display:block;font-size:14px;line-height:1.5;color:#55594f;margin-top:4px}
 .appointment .appointment-links{align-self:start}
+
+.ifs-profile-link,.mindfulness-copy .ifs-profile-link{display:inline;color:inherit;font:inherit;text-decoration:underline;text-underline-offset:3px;border:0;margin:0;padding:0}.ifs-profile-link:focus-visible{outline:2px solid currentColor;outline-offset:3px}
