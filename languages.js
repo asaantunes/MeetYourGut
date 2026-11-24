@@ -34,6 +34,8 @@ translations.en[selectors.indexOf(".intro-grid div p:nth-child(1)")] = "Meet You
 translations.en[selectors.indexOf(".intro-grid div p:nth-child(2)")] = "The digestive system is in constant dialogue with the brain, the autonomic nervous system, the microbiota and our life experiences. This connection invites us to care for digestive health by considering the whole person: their body, emotions, thoughts and the context in which they live.";
 translations.fr[selectors.indexOf(".intro-grid div p:nth-child(1)")] = "Meet Your Gut est né de l’idée que comprendre notre santé digestive peut être un point de départ pour mieux nous comprendre.";
 translations.fr[selectors.indexOf(".intro-grid div p:nth-child(2)")] = "Le système digestif dialogue constamment avec le cerveau, le système nerveux autonome, le microbiote et notre vécu. Ce lien nous invite à prendre soin de la santé digestive en considérant la personne dans sa globalité : son corps, ses émotions, ses pensées et le contexte dans lequel elle vit.";
+translations.en[selectors.indexOf('.hero h1')] = '<span class="hero-site-name">Meet Your Gut</span>A space to<br /><em>listen to your body.</em>';
+translations.fr[selectors.indexOf('.hero h1')] = '<span class="hero-site-name">Meet Your Gut</span>Un espace pour<br /><em>écouter son corps.</em>';
 const nodes = selectors.map(selector => document.querySelector(selector));
 const original = nodes.map(node => node ? node.innerHTML : '');
 const additionalNodes = [document.querySelector('.doctor-bio'), document.querySelector('.appointment-languages'), ...document.querySelectorAll('.practice-options h3, .practice-options p, .practice-options span, .practice-options a')];
@@ -62,17 +64,17 @@ additionalTranslations.en.splice(11, 3, 'Newsletter', 'Articles on the gut–bra
 additionalTranslations.fr.splice(11, 3, 'Newsletter', 'Articles sur l’axe intestin–cerveau, le microbiome et la connaissance de soi.', 'S’abonner à la newsletter ↗');
 const pageMetadata = {
   "pt": {
-    "title": "Rita Ornelas | Gastrenterologista no Algarve | Meet Your Gut",
+    "title": "Meet Your Gut | Rita Ornelas — Gastrenterologia e Mindfulness",
     "description": "Rita Ornelas, médica especialista em Gastrenterologia no Algarve e Alentejo. Conheça o Meet Your Gut, os locais de consulta, exames endoscópicos e recursos.",
     "locale": "pt_PT"
   },
   "en": {
-    "title": "Rita Ornelas | Gastroenterologist in the Algarve | Meet Your Gut",
+    "title": "Meet Your Gut | Rita Ornelas — Gastroenterology and Mindfulness",
     "description": "Rita Ornelas, a gastroenterologist practising in the Algarve and Alentejo. Discover Meet Your Gut, consultation locations, endoscopic examinations and resources.",
     "locale": "en_GB"
   },
   "fr": {
-    "title": "Rita Ornelas | Gastro-entérologue en Algarve | Meet Your Gut",
+    "title": "Meet Your Gut | Rita Ornelas — Gastro-entérologie et pleine conscience",
     "description": "Rita Ornelas, gastro-entérologue en Algarve et en Alentejo. Découvrez Meet Your Gut, les lieux de consultation, les examens endoscopiques et les ressources.",
     "locale": "fr_FR"
   }
